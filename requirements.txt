@@ -1,0 +1,6 @@
+praw
+pandas 
+numpy
+matplotlib
+seaborn
+confluent-kafka
