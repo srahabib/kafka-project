@@ -4,3 +4,5 @@ numpy
 matplotlib
 seaborn
 confluent-kafka
+#pyspark3.1.2
+pyspark==3.1.2

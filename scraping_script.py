@@ -1,3 +1,6 @@
+# from pyspark.streaming.kafka import KafkaUtils
+# from pyspark.streaming import StreamingContext
+# from pyspark.sql import SparkSession
 from confluent_kafka import Producer, Consumer
 import praw
 from pprint import pprint
@@ -6,6 +9,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
+
+
 # Ignore all warnings
 warnings.filterwarnings("ignore")
 
@@ -85,7 +90,6 @@ while True:
     # Process the received message
     data = msg.value()
     print(data)
-    # Add your processing logic here
+    # Subscribe to 1 topic
 
-# Close the consumer
 consumer.close()
